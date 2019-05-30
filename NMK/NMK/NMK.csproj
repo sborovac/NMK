@@ -1,0 +1,188 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{0E22D780-499D-475A-92A8-B2CDB240014F}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>NMK</RootNamespace>
+    <AssemblyName>NMK</AssemblyName>
+    <TargetFrameworkVersion>v4.6.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Security" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Doktor.cs" />
+    <Compile Include="GPlacanje.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GPlacanje.Designer.cs">
+      <DependentUpon>GPlacanje.cs</DependentUpon>
+    </Compile>
+    <Compile Include="HitniSlucaj.cs" />
+    <Compile Include="IAnamneza.cs" />
+    <Compile Include="IspisPregleda.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="IspisPregleda.Designer.cs">
+      <DependentUpon>IspisPregleda.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Karton.cs" />
+    <Compile Include="Klinika.cs" />
+    <Compile Include="Naplata.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Naplata.Designer.cs">
+      <DependentUpon>Naplata.cs</DependentUpon>
+    </Compile>
+    <Compile Include="NMK.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="NMK.Designer.cs">
+      <DependentUpon>NMK.cs</DependentUpon>
+    </Compile>
+    <Compile Include="NormalniPacijent.cs" />
+    <Compile Include="Ordinacije.cs" />
+    <Compile Include="Pacijent.cs" />
+    <Compile Include="Pregled.cs" />
+    <Compile Include="FKarton.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FKarton.Designer.cs">
+      <DependentUpon>FKarton.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MeniObicni.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MeniObicni.Designer.cs">
+      <DependentUpon>MeniObicni.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MeniDoktor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MeniDoktor.Designer.cs">
+      <DependentUpon>MeniDoktor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MeniPacijenta.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MeniPacijenta.Designer.cs">
+      <DependentUpon>MeniPacijenta.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Registracija.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Registracija.Designer.cs">
+      <DependentUpon>Registracija.cs</DependentUpon>
+    </Compile>
+    <Compile Include="RegistracijaPregleda.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RegistracijaPregleda.Designer.cs">
+      <DependentUpon>RegistracijaPregleda.cs</DependentUpon>
+    </Compile>
+    <Compile Include="RPlacanje.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RPlacanje.Designer.cs">
+      <DependentUpon>RPlacanje.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Zaposleni.cs" />
+    <EmbeddedResource Include="GPlacanje.resx">
+      <DependentUpon>GPlacanje.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="IspisPregleda.resx">
+      <DependentUpon>IspisPregleda.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Naplata.resx">
+      <DependentUpon>Naplata.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FKarton.resx">
+      <DependentUpon>FKarton.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MeniObicni.resx">
+      <DependentUpon>MeniObicni.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MeniDoktor.resx">
+      <DependentUpon>MeniDoktor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MeniPacijenta.resx">
+      <DependentUpon>MeniPacijenta.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="NMK.resx">
+      <DependentUpon>NMK.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="Registracija.resx">
+      <DependentUpon>Registracija.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RegistracijaPregleda.resx">
+      <DependentUpon>RegistracijaPregleda.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RPlacanje.resx">
+      <DependentUpon>RPlacanje.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Slika\img2.png" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
